@@ -15,7 +15,10 @@ If you're ready to design and fabricate a PCB, that usually means that you have 
 
 So, we're going to open that up in Frizting, which should look a little something like this:
 IMAGE OF FRITZING-breadboard view
-We are so done with breadboarding, though.  Let's move on to the PCB page.  To get there you want to click on the button that says "PCB" up at the top of the page.  Alternatively, you can press &#8984-4.
+We are so done with breadboarding, though.  Let's move on to the PCB page.  To get there you want to click on the button that says "PCB" up at the top of the page.  Alternatively, you can press ⌘4 to get there.
+
+IMAGE OF FRITZING-- pcb view
+Ok, so now we have the pcb view up, and you can see that I have all my components placed and the traces properly routed.  Just as a side note, the big empty space on the right is going to be for our potentiometer.  Once I've got everything finalized, I want to do a quick design rules check to make sure I haven't crossed any traces--this becomes more important with more complex boards.
 
 
 
