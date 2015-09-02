@@ -1,7 +1,7 @@
 # CircuitBoardTutorial
 This tutorial describes how to create your very own printed circuit board (PCB) using the tools in Art & Technology Studies ioLab at the [School of the Art Institute of Chicago](www.saic.edu).  Here's what we will cover in this tut:
-1. Using [Fritzing](www.fritzing.org) to design the PCB for your project.
-2. Exporting and preparing that design for the circuit board mill.
+1.Using [Fritzing](www.fritzing.org) to design the PCB for your project.
+ 2. Exporting and preparing that design for the circuit board mill.
 3. Setting up the mill and running a mill job.
 4. Finishing your PCB and preparing to put it into use.
 
