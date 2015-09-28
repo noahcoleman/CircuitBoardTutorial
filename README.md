@@ -14,22 +14,30 @@ Ok, let's get started!!
 If you're ready to design and fabricate a PCB, that usually means that you have already worked out your circuit on a breadboard.  You may even have soldered up one or two of said circuit on a protoboard. A dedicated PCB can save you space and keep you from having to solder a million jumpers all over your protoboard.  For this tutorial, we're going to use a modified version of the [555 Timer LED Flasher](http://fritzing.org/projects/555-timer-led-flasher) from Fritzing's projects page.  The astable 555 circuit is a oldy and a goody and it will show some of the features of that can make a PCB more desirable than a protoboard.  [Here](https://github.com/noahcoleman/CircuitBoardTutorial/blob/master/555%20Timer%20IC.fzz) is the Fritzing file we'll be using.
 
 So, we're going to open that up in Frizting, which should look a little something like this:
-IMAGE OF FRITZING-breadboard view
+![alt text][1]
 We are so done with breadboarding, though.  Let's move on to the PCB page.  To get there you want to click on the button that says "PCB" up at the top of the page.  Alternatively, you can press ⌘4 to get there.
 
 IMAGE OF FRITZING-- pcb view
+![alt text][2]
 Ok, so now we have the pcb view up, and you can see that I have all my components placed and the traces properly routed.  Just as a side note, the big empty space on the right is going to be for the potentiometer.  Once I've got everything finalized, I want to do a quick design rules check to make sure I haven't crossed any traces--this becomes more important with more complex boards.
+![alt text][3]
 
 ## 2. Exporting and preparing file for MIT CBA Fab Modules
 To export, click on the button at the bottom labeled "Export for PCB." IMAGE I like to use the PDF, but you can use the SVG if you prefer.  Specify the folder you'd like to export to. *Hint: This action exports several files all at once, so I recommend creating a new folder for each project.  Just exporting it to your desktop or wherever will become a mess real fast.
+![alt text][4]
 
 Next, let's navigate to the folder we just exported the PDFs to. There will be 16 or so files there.  We are only interested in the one that ends with "..._etch_copper_bottom_mirror." We want to mill out the copper bottom layer, and we want it mirrored so that the circuit will look as it did in Fritzing when we solder it all up.  
 
-Fab Modules uses .png images as input for creating the circuitboard.  Open your ..._etch_copper_bottom_mirror.pdf in Preview and go to File>>Export.  Select .png as your file output.  
+Fab Modules uses .png images as input for creating the circuitboard.  Open your ..._etch_copper_bottom_mirror.pdf in Preview and go to **File>>Export**.  Select .png as your file output.  The easiest way to get this new png to the roland is by putting it on the special *Roland Thumb Drive* located on the Roland cart.  Here's what it looks like for the visual folks: 
+![alt text][5]
 
 
 
 
-
+[1]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/BreadboardView.jpg "Breadboard view."
+[2]: pcb view
+[3]: pcb drc 
+[4]: export PDF
+[5]: jump drive
 
 
