@@ -44,6 +44,8 @@ Once that's open, click the *load .png* button to the left of the window.  Selec
 ![alt text][8]
 
 That looks a little messy, so we're going to change some settings so we can better see what is going on.  At the bottom of the window, just underneath where your paths are, open the dropdown menu that says *view type*.  Select *segments*. There, that's better.  Now, we want to mill traces on a PCB, so go to the dropdown menu that says *defaults* at the top center of the window. Select *mill traces (0.010)*
+![alt text][9]
+
 
 
 
