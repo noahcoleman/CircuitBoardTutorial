@@ -33,8 +33,10 @@ Fab Modules uses .png images as input for creating the circuitboard.  Open your 
 
 Now we head over to the Roland cart and the Raspberry Pi.  Plug the jump drive into the hub located near the back of the cart and double-click the `start_fab.sh` icon on the desktop, then click *Execute*.
 ![alt text][6]
+
 Once that comes up, we need to select our input type as well as the output type.  For what we're doing, we want **image (.png)** as the input and **Roland Modela (.rml)** as the output. Click the button on the right that says "make_png_rml"
 ![alt text][7]
+
 This opens up the program that will send the PCB design to the mill for cutting.
 
 
