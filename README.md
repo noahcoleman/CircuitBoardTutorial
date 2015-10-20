@@ -31,6 +31,7 @@ Next, let's navigate to the folder we just exported the PDFs to. There will be 1
 Fab Modules uses .png images as input for creating the circuitboard.  Open your ..._etch_copper_bottom_mirror.pdf in Preview and go to **File>>Export**.  Select .png as your file output.  The easiest way to get this new png to the roland is by putting it on the special *Roland Thumb Drive* located on the Roland cart (it is formatted specifically for the Raspberry Pi).  Here's what it looks like for the visual folks: 
 ![alt text][5]
 
+## 3. Preparing the file for milling on Roland Modela
 Now we head over to the Roland cart and the Raspberry Pi.  Plug the jump drive into the hub located near the back of the cart and double-click the `start_fab.sh` icon on the desktop, then click *Execute*.
 ![alt text][6]
 
@@ -38,6 +39,11 @@ Once that comes up, we need to select our input type as well as the output type.
 ![alt text][7]
 
 This opens up the program that will send the PCB design to the mill for cutting.
+
+Once that's open, click the *load .png* button to the left of the window.  Select the .png file you put on the jump drive.  Next, click the *make .path* button near the bottom of the window.  You should wind up with something like this: 
+![alt text][8]
+
+That looks a little messy, so we're going to change some settings so we can better see what is going on.  At the bottom of the window, just underneath where your paths are, open the dropdown menu that says *view type*.  Select *segments*. There, that's better.  Now, we want to mill traces on a PCB, so go to the dropdown menu that says *defaults* at the top center of the window. Select *mill traces (0.010)*
 
 
 
@@ -49,8 +55,8 @@ This opens up the program that will send the PCB design to the mill for cutting.
 [5]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/JumpDrive.JPG "This is the jump drive you should use."
 [6]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/start_fab_sh.png "start_fab.sh"
 [7]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/png2rml.png ".img as input, .rml as output"
-[8]:
-[9]:
+[8]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/loadPngMakePath.png "load .png, make path."
+[9]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/millTracesChangeSettings.png "Mill traces, finesse settings"
 [10]:
 [11]:
 [12]:
