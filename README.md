@@ -46,6 +46,13 @@ Once that's open, click the *load .png* button to the left of the window.  Selec
 That looks a little messy, so we're going to change some settings so we can better see what is going on.  At the bottom of the window, just underneath where your paths are, open the dropdown menu that says *view type*.  Select *segments*. There, that's better.  Now, we want to mill traces on a PCB, so go to the dropdown menu that says *defaults* at the top center of the window. Select *mill traces (0.010)*
 ![alt text][9]
 
+The way this software decides how to create the paths for the mill (which is not typical of most CAM programs) is by looking for where black and white meet.  Think of it almost like an image trace in Adobe Illustrator.  We can change certain settings to affect how the software interprets the border between white and black and how it creates the toolpaths.
+- **diameter (mm)** refers to the diameter of the bit in the mill in millimeters.  We can leave that one for now.
+- **overlap** refers to how much each path will overlap the one preceding.  We can also leave that one alone.
+- **intensity** 
+- **offsets**. 1 means it will create one path, 2+ will create additional concentric paths around the original. 
+- **error (pixels)** 
+- **z (mm)**
 
 
 
