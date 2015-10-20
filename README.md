@@ -41,10 +41,10 @@ This opens up the program that will send the PCB design to the mill for cutting.
 
 
 [1]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/BreadboardView.jpg "Breadboard view."
-[2]: "PCB View."
+[2]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/PCBView.jpg "PCB View."
 [3]: "Design Rules Check (very important!)".
-[4]: "Export PDF."
-[5]: "This is the jump drive you should use."
+[4]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/ExportPDF.jpg "Export PDF."
+[5]: https://raw.githubusercontent.com/noahcoleman/CircuitBoardTutorial/master/images/JumpDrive.JPG "This is the jump drive you should use."
 [6]: "start_fab.sh"
 [7]: ".img as input, .rml as output"
 [8]:
