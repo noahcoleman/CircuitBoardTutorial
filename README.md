@@ -49,10 +49,12 @@ That looks a little messy, so we're going to change some settings so we can bett
 The way this software decides how to create the paths for the mill (which is not typical of most CAM programs) is by looking for where black and white meet.  Think of it almost like an image trace in Adobe Illustrator.  We can change certain settings to affect how the software interprets the border between white and black and how it creates the toolpaths.
 - **diameter (mm)** refers to the diameter of the bit in the mill in millimeters.  We can leave that one for now.
 - **overlap** refers to how much each path will overlap the one preceding.  We can also leave that one alone.
-- **intensity** 
+- **intensity** adjusts the threshold between white and black where the program draws the path.
 - **offsets**. 1 means it will create one path, 2+ will create additional concentric paths around the original. 
-- **error (pixels)** 
-- **z (mm)**
+- **error (pixels)** affects how "fine" the paths are.  Larger numbers mean chunkier curves, smaller numbers with smooth those curves out.
+- **z (mm)** is the depth the machine will go as it is cutting the path.  The default is usually sufficient.
+
+
 
 
 
