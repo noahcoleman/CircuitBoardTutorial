@@ -1,12 +1,12 @@
 # CircuitBoardTutorial
 This tutorial describes how to create your very own printed circuit board (PCB) using the tools in Art & Technology Studies ioLab at the [School of the Art Institute of Chicago](http://www.saic.edu).  Here's what we will cover in this tut:
 
-1. Using [fritzing](www.fritzing.org) to design the PCB for your project.
+1. Using [fritzing](http://www.fritzing.org) to design the PCB for your project.
 2. Exporting and preparing that design for the circuit board mill using the MIT CBE's [Fab Modules](http://kokompe.cba.mit.edu/).s
 3. Setting up the mill and running a mill job.
 4. Finishing your PCB and preparing to put it into use.
 
-For this tutorial, let's assume that you already have [downloaded](fritzing.org/download) Fritzing, you have designed your PCB, you have some electronics experience and that you're proficient at breadboarding a circuit, soldering, and checking continuity with a multimeter.  I will be touching briefly on the example design, but there are many more in-depth tutorials over at http://fritzing.org/learning/.
+For this tutorial, let's assume that you already have [downloaded](http://fritzing.org/download) Fritzing, you have designed your PCB, you have some electronics experience and that you're proficient at breadboarding a circuit, soldering, and checking continuity with a multimeter.  I will be touching briefly on the example design, but there are many more in-depth tutorials over at http://fritzing.org/learning/.
 
 Ok, let's get started!!
 
@@ -47,12 +47,18 @@ That looks a little messy, so we're going to change some settings so we can bett
 ![alt text][9]
 
 The way this software decides how to create the paths for the mill (which is not typical of most CAM programs) is by looking for where black and white meet.  Think of it almost like an image trace in Adobe Illustrator.  We can change certain settings to affect how the software interprets the border between white and black and how it creates the toolpaths.
-- **diameter (mm)** refers to the diameter of the bit in the mill in millimeters.  We can leave that one for now.
+- **diameter (mm)** refers to the diameter of the milling bit in millimeters.  We can leave that one for now.
 - **overlap** refers to how much each path will overlap the one preceding.  We can also leave that one alone.
 - **intensity** adjusts the threshold between white and black where the program draws the path.
 - **offsets**. 1 means it will create one path, 2+ will create additional concentric paths around the original. 
-- **error (pixels)** affects how "fine" the paths are.  Larger numbers mean chunkier curves, smaller numbers with smooth those curves out.
+- **error (pixels)** affects how "fine" the paths are.  Larger numbers mean chunkier curves, smaller numbers with smooth those curves out. *I like to use **0.01**.*
 - **z (mm)** is the depth the machine will go as it is cutting the path.  The default is usually sufficient.
+
+Once the settings are good to go, press *make .path*.  Wait a few moments (the RPi is thinking) and pretty soon you should see blue lines that closely resemble your B&W PNG.  Check to make sure all the pads and traces are isolated.  Most issues can be fixed by changing the **intensity** and **error (pixels)** settings.  Everything look good? Great!
+
+Let's move on to the settings on the far right of the window.
+- **speed (mm/s):** The speed the bit will move through the material. 4 mm/s is a safe speed for both etching traces and cutting out the board.
+- **jog (mm):** The height the bit will lift for travel
 
 
 
